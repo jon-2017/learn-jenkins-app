@@ -30,7 +30,6 @@ pipeline {
             }
             steps{
                 sh '''
-                   echo "From the Test stages"
                    test -f build/index.html
                    npm test
                    '''
